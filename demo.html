@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <title>Tabify jQuery plugin | Demo</title>
+        
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        
+        <style>
+            pre {
+                display: inline-block;
+                padding: 0 50px 0 20px;
+            }
+            pre, code {
+                background-color: #EBEBEB;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <h1>Tabify</h1>
+        
+        <h3>HTML requirements:</h3>
+        <ul>
+            <li>A parent for your tabs and panes, <code>.tabs</code> in this case<br>(so you can use multiple components on the same page)</li>
+            <li>x occurences of <code>.tabs__tab</code></li>
+            <li>x occurences of <code>.tabs__pane</code></li>
+        </ul>
+        
+        <pre><code>
+&lt;section class="tabs"&gt;
+
+    &lt;p class="tabs__tab"&gt;Tab title&lt;/p&gt;
+    &lt;p class="tabs__tab"&gt;Tab title&lt;/p&gt;
+
+    &lt;div class="tabs__pane"&gt;
+        &lt;p&gt;Tab 0 - Content&lt;/p&gt;
+    &lt;/div&gt;
+
+    &lt;div class="tabs__pane"&gt;
+        &lt;p&gt;Tab 1 - Content&lt;/p&gt;
+    &lt;/div&gt;
+
+&lt;/section&gt;
+        </code></pre>
+        
+        <h3>Styling</h3>
+        <p>This plugin is meant for developers, therefore there is no CSS.<br>
+        Compose your page as you want as long as you follow the required CSS classes.</p>
+        
+        <h3>Demo</h3>
+        <section class="features tabs">
+       
+            <div class="tabs__tabs">
+
+                <p class="tabs__tab">Tab title</p>
+                <p class="tabs__tab">Tab title</p>
+
+            </div>
+
+
+            <div class="tabs__pane">
+                <p>Tab 0 - Content</p>
+            </div>
+
+            <div class="tabs__pane">
+                <p>Tab 1 - Content</p>
+            </div>
+
+        </section>
+        
+        <script src="tabify.js"></script>
+        
+        <script type="text/javascript">
+            $('.tabs').tabify();
+        </script>
+    </body>
+</html>
